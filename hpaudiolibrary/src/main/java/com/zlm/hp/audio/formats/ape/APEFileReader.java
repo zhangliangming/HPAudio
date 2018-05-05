@@ -1,6 +1,8 @@
 package com.zlm.hp.audio.formats.ape;
 
 
+import android.util.Log;
+
 import com.zlm.hp.audio.AudioFileReader;
 import com.zlm.hp.audio.TrackInfo;
 
@@ -24,7 +26,7 @@ public class APEFileReader
             ras.close();
             return trackInfo;
         } catch (Exception e) {
-            e.printStackTrace();
+            Log.e("APEFileReader", e.toString());
         }
         return null;
     }

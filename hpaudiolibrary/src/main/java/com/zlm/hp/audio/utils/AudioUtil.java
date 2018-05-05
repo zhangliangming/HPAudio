@@ -4,6 +4,7 @@ import com.zlm.hp.audio.AudioFileReader;
 import com.zlm.hp.audio.formats.ape.APEFileReader;
 import com.zlm.hp.audio.formats.flac.FLACFileReader;
 import com.zlm.hp.audio.formats.mp3.MP3FileReader;
+import com.zlm.hp.audio.formats.ogg.OGGFileReader;
 import com.zlm.hp.audio.formats.wav.WAVFileReader;
 
 import java.util.ArrayList;
@@ -17,6 +18,7 @@ public class AudioUtil {
         readers.add(new APEFileReader());
         readers.add(new FLACFileReader());
         readers.add(new WAVFileReader());
+        readers.add(new OGGFileReader());
 
     }
 

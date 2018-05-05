@@ -1,6 +1,8 @@
 package com.zlm.hp.audio.formats.mp3;
 
 
+import android.util.Log;
+
 import com.zlm.hp.audio.AudioFileReader;
 import com.zlm.hp.audio.TrackInfo;
 
@@ -15,6 +17,7 @@ import java.nio.charset.Charset;
 
 import davaguine.jmac.info.ID3Tag;
 
+
 public class MP3FileReader
         extends AudioFileReader {
     private static final int GAPLESS_DELAY = 529;
@@ -26,8 +29,8 @@ public class MP3FileReader
         MP3File mp3File = null;
         try {
             mp3File = new MP3File(trackInfo.getFile(), 14, true);
-        } catch (Exception ignored) {
-            System.out.println("Couldn't read file: " + trackInfo.getFile());
+        } catch (Exception e) {
+            Log.e("MP3FileReader", e.toString());
         }
         ID3v24Tag v24Tag = null;
         if (mp3File != null) {
