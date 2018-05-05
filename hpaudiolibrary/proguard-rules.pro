@@ -21,7 +21,7 @@
 #-renamesourcefileattribute SourceFile
 
 -keep class org.jaudiotagger.** { *; }
--keep davaguine.jmac.** { *; }
+-keep class davaguine.jmac.** { *; }
 
 -keep class com.zlm.hp.audio.**
 -keepclassmembers class com.zlm.hp.audio.** {
