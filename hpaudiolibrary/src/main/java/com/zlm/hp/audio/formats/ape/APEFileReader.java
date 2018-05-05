@@ -38,7 +38,7 @@ public class APEFileReader
         trackInfo.setFrameSize(frameSize);
         trackInfo.setSampleRate(fileInfo.nSampleRate);
         trackInfo.setTotalSamples(fileInfo.nTotalBlocks);
-        trackInfo.setPlayedProgress(0L);
+        trackInfo.setStartPosition(0L);
         trackInfo.setCodec("Monkey's Audio");
         trackInfo.setBitrate(fileInfo.nAverageBitrate);
     }

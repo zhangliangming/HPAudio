@@ -42,7 +42,7 @@ public abstract class AudioFileReader {
             trackInfo.setFrameSize(frameSize);
             trackInfo.setTotalSamples(header.getTotalSamples().longValue());
             trackInfo.setSampleRate(header.getSampleRateAsNumber());
-            trackInfo.setPlayedProgress(0L);
+            trackInfo.setStartPosition(0L);
             trackInfo.setCodec(header.getFormat());
             trackInfo.setBitrate((int) header.getBitRateAsNumber());
         }

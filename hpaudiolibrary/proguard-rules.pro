@@ -23,6 +23,7 @@
 -ignorewarnings
 -keep class org.jaudiotagger.** { *; }
 -keep class davaguine.jmac.** { *; }
+-keep class com.wavpack.** { *; }
 
 -keep class com.zlm.hp.audio.**
 -keepclassmembers class com.zlm.hp.audio.** {

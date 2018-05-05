@@ -30,4 +30,5 @@ android {
 dependencies {
     implementation files('libs/jaudiotagger-2.0.4.jar')
     implementation files('libs/jmac-1.74.jar')
+    implementation files('libs/wavpack1.1.jar')
 }

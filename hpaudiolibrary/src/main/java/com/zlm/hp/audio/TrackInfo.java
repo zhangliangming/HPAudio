@@ -15,7 +15,7 @@ public class TrackInfo
   private String encoder;
   private String filePath;
   private String fileExt;
-  private long playedProgress;
+  private long startPosition;
   private long duration;
   private String durationStr;
   private long fileSize;
@@ -131,17 +131,15 @@ public class TrackInfo
   {
     this.encoder = encoder;
   }
-  
-  public long getPlayedProgress()
-  {
-    return this.playedProgress;
+
+  public long getStartPosition() {
+    return startPosition;
   }
-  
-  public void setPlayedProgress(long playedProgress)
-  {
-    this.playedProgress = playedProgress;
+
+  public void setStartPosition(long startPosition) {
+    this.startPosition = startPosition;
   }
-  
+
   public long getDuration()
   {
     return this.duration;
