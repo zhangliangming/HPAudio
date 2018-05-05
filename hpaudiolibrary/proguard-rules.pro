@@ -20,6 +20,9 @@
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
 
+-keep class org.jaudiotagger.** { *; }
+-keep davaguine.jmac.** { *; }
+
 -keep class com.zlm.hp.audio.**
 -keepclassmembers class com.zlm.hp.audio.** {
    public *;
