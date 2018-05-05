@@ -20,12 +20,6 @@
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
 
--libraryjars libs/jaudiotagger-2.0.4.jar
--libraryjars libs/jmac-1.74.jar
-
--dontwarn javax.annotation.Nullable
--dontwarn javax.annotation.ParametersAreNonnullByDefault
-
 -keep class com.zlm.hp.audio.**
 -keepclassmembers class com.zlm.hp.audio.** {
    public *;
