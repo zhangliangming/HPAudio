@@ -28,6 +28,9 @@ android {
 }
 
 dependencies {
-    implementation fileTree(include: ['*.jar'], dir: 'libs')
-
+    implementation files('libs/jaudiotagger-2.0.4.jar')
+    implementation files('libs/javaFlacEncoder-0.1.jar')
+    implementation files('libs/javalayer-1.0.1.jar')
+    implementation files('libs/jflac-1.3.jar')
+    implementation files('libs/jmac-1.74.jar')
 }
