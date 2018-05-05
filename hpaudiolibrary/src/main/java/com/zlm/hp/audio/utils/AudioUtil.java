@@ -9,7 +9,7 @@ import com.zlm.hp.audio.formats.wav.WAVFileReader;
 import java.util.ArrayList;
 
 public class AudioUtil {
-    private static ArrayList<AudioFileReader> readers = new ArrayList();
+    private static ArrayList<AudioFileReader> readers = new ArrayList<AudioFileReader>();
 
 
     static {
