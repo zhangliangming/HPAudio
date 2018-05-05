@@ -20,6 +20,7 @@
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
 
+-ignorewarnings
 -keep class org.jaudiotagger.** { *; }
 -keep class davaguine.jmac.** { *; }
 
