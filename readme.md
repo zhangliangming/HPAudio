@@ -2,6 +2,11 @@
 该开源依赖库是乐乐音乐播放器里的一个音频模块功能，主要是解析wav、mp3、ape和flac歌曲信息，如：声道数、采样率、时间等信息，其项目地址如下：[乐乐音乐播放器](https://github.com/zhangliangming/HappyPlayer5.git)。
 
 ## v1.0 ##
+- 2018-05-05
+- 代码混淆
+
+
+## v1.0 ##
 
 
 - 2018-04-30
@@ -20,7 +25,7 @@
 2.app build.gradle
 
 `dependencies {
-	         compile 'com.github.zhangliangming:HPAudio:v1.0'
+	         compile 'com.github.zhangliangming:HPAudio:v1.1'
 	}`
 
 # 调用Demo #
