@@ -33,7 +33,7 @@
 2.app build.gradle
 
 `dependencies {
-	         compile 'com.github.zhangliangming:HPAudio:v2.1'
+	         compile 'com.github.zhangliangming:HPAudio:v2.2'
 	}`
 
 # 调用Demo #
