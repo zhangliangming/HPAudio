@@ -9,6 +9,7 @@ import com.zlm.hp.audio.formats.wav.WAVFileReader;
 import com.zlm.hp.audio.formats.wv.WVFileReader;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class AudioUtil {
     private static ArrayList<AudioFileReader> readers = new ArrayList<AudioFileReader>();
@@ -50,5 +51,18 @@ public class AudioUtil {
             return "";
         }
         return filePath.substring(pos + 1).toLowerCase();
+    }
+
+    /**
+     * 获取支持的音频文件格式
+     *
+     * @return
+     */
+    public static List<String> getSupportAudioExts() {
+        List<String> audioExts = new ArrayList<String>();
+        for (AudioFileReader audioFileReader : readers) {
+            audioExts.add(audioFileReader.getSupportFileExt());
+        }
+        return audioExts;
     }
 }

@@ -27,4 +27,9 @@ public class OGGFileReader extends AudioFileReader {
         return ext.equalsIgnoreCase("ogg");
     }
 
+    @Override
+    public String getSupportFileExt() {
+        return "ogg";
+    }
+
 }

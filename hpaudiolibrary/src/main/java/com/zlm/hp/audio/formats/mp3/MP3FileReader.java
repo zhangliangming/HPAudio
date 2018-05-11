@@ -63,4 +63,9 @@ public class MP3FileReader
     public boolean isFileSupported(String ext) {
         return ext.equalsIgnoreCase("mp3");
     }
+
+    @Override
+    public String getSupportFileExt() {
+        return "mp3";
+    }
 }

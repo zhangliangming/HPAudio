@@ -50,5 +50,12 @@ public abstract class AudioFileReader {
 
     protected abstract TrackInfo readSingle(TrackInfo paramTrackInfo);
 
-    public abstract boolean isFileSupported(String paramString);
+    public abstract boolean isFileSupported(String ext);
+
+    /**
+     * 获取支持的文件后缀名
+     *
+     * @return
+     */
+    public abstract String getSupportFileExt();
 }

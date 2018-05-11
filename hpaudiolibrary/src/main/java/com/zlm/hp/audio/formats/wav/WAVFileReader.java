@@ -34,4 +34,9 @@ public class WAVFileReader
         return ext.equalsIgnoreCase("wav");
     }
 
+    @Override
+    public String getSupportFileExt() {
+        return "wav";
+    }
+
 }

@@ -46,4 +46,9 @@ public class APEFileReader
     public boolean isFileSupported(String ext) {
         return ext.equalsIgnoreCase("ape");
     }
+
+    @Override
+    public String getSupportFileExt() {
+        return "ape";
+    }
 }

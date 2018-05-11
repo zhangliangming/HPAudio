@@ -45,4 +45,9 @@ public class WVFileReader
         return ext.equalsIgnoreCase("wv");
     }
 
+    @Override
+    public String getSupportFileExt() {
+        return "wv";
+    }
+
 }

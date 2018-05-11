@@ -30,4 +30,9 @@ public class FLACFileReader
     public boolean isFileSupported(String ext) {
         return ext.equalsIgnoreCase("flac");
     }
+
+    @Override
+    public String getSupportFileExt() {
+        return "flac";
+    }
 }
