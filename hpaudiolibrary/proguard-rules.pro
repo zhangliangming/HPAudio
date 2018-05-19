@@ -21,6 +21,7 @@
 #-renamesourcefileattribute SourceFile
 
 -dontwarn javax.**
+-dontwarn java.awt.**
 -keep class org.jaudiotagger.** { *; }
 -keep class davaguine.jmac.** { *; }
 -keep class com.wavpack.** { *; }
