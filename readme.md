@@ -40,6 +40,14 @@
 	         compile 'com.github.zhangliangming:HPAudio:v2.4'
 	}`
 
+# 混淆注意 #
+-dontwarn javax.**
+-dontwarn java.awt.**
+-keep class org.jaudiotagger.** { *; }
+-keep class davaguine.jmac.** { *; }
+-keep class com.wavpack.** { *; }
+-keep class com.zlm.hp.audio.** { *; }
+
 # 调用Demo #
 
 链接: [https://pan.baidu.com/s/15SixU_nviX1ppK74gxL3dg](https://pan.baidu.com/s/15SixU_nviX1ppK74gxL3dg)  密码: u8hw
