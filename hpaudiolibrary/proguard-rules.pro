@@ -20,7 +20,7 @@
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
 
--ignorewarnings
+-dontwarn javax.**
 -keep class org.jaudiotagger.** { *; }
 -keep class davaguine.jmac.** { *; }
 -keep class com.wavpack.** { *; }
